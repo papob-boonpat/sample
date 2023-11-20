@@ -13,6 +13,7 @@ function App() {
         <Route element={<About />} path="/about" />
         <Route path="/contact">
           <Route element={<Contact />} index />
+          <Route element={<Contact />} path=":isLike" />
           <Route element={<MapPage />} path="map" />
         </Route>
       </Routes>
